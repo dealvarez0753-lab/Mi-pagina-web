@@ -30,18 +30,134 @@
   </ul>
     </nav>
     
-    <main id="contenido" class="continer">
-        <section clss="card" id="texto">
-            <h2> 1) Texto y estructura </h2>
-            <article>
-                <h3>Encabezado</h3>
-                <p> Este es un parrafo con <strong> negrita</strong> <em>Letras cursivas</em> <mark>resaltas las letras</mark> <u>subraya el texto</u></p>
-            </article>
+    <main id="contenido" class="container">
+        <section class="card" id="texto">
+      <h2>1) Texto y estructura</h2>
 
-        </section>
-    </main>
+      <article>
+        <h3>Encabezados</h3>
+        <p>Esto es un párrafo con <strong>strong</strong>, <em>em</em>, <mark>mark</mark>, <u>u</u> y <code>code</code>.</p>
+
+        <p>
+          Un enlace: <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web Docs</a>.
+          Un <abbr title="HyperText Markup Language">HTML</abbr> bien usado es oro.
+        </p>
+
+        <blockquote cite="https://developer.mozilla.org/">
+          “La web se construye mejor cuando el HTML tiene significado.”
+        </blockquote> <!-- para citar -->
+
+        <p>
+          Texto pequeño: <small>esto es una nota al pie mental.</small> <!-- texto mas pequeñas letra -->
+        </p>
+
+        <p>
+          Superíndice y subíndice: H<sub>2</sub>O y 2<sup>10</sup>.
+        </p>
+
+        <hr />
+
+        <h3>Detalles expandibles</h3>  <!-- detalles, listas expandibles -->
+        <details>
+          <summary>Abre para ver un tip</summary>
+          <p>Usa etiquetas semánticas: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>… tu yo del futuro te lo agradece.</p>
+        </details>
+
+        <h3>Preformateado</h3>  <!-- hace salto de linea y espacios -->
+        <pre><code>function holaMundo() {
+  console.log("Hola, GitHub!");
+}</code></pre>
+      </article>
+    </section>
+   
+
+    <section class="car">
+        <h2>2) Listas</h2>
+        <div class="grid">
+
+            <div> <!-- contenedor -->
+                <h3>LISTAS NO ORDENADAS</h3>
+                <ul>
+                    <li>Pan</li>
+                    <li>Café</li>
+                    <li>Cena</li>
+                    
+                </ul>
+            </div>
+
+        
+
+        <div>
+            <h3>LISTAS ORDENADAS</h3>
+            <ol>
+                <li>Clonaar repo</li>
+                <li>Editar</li>
+                <li>Comentar</li>
+                <li>Push</li>
+            </ol>
+        </div>
+
+        <div>
+            <h3>LISTAS DE DEFINICIONES</h3>
+            <dl>
+                <dt>html</dt>
+                <dt>Estructuras</dt>
+                <dt>Estilo</dt>
+                <dt>JS</dt>
+            </dl>
+        </div>
+    
+      </div>
+    </section>
+
+<section class="card" id="multumedia">
+    <h2>Multimedia</h2>
+    <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBeH2K5UxReBHuWp0PA4ZzW31SuPUnJ8sU6Q&s" alt="Imagen de ejemplo">
+    </figure>
+    
+    <p>
+        <button type="button" class="btn"> Botón 
+            <a href="#Formularios" class="btn ghost">Ir a Formularios</a>
+        </button>
+    </p>
+
+</section>
+<section class="card" id="tablas">
+    <h2>4) TABLAS</h2>
+    <table>
+    <caption>Tablas de ejemplo</caption>  <!-- nombre tablas -->
+    <thead>  <!-- cabecera de la tabla -->
+        <tr>   <!-- para especificar fila del elcabezado -->
+            <th scope="col">comando</th> <!-- celdas del encabezado -->
+            <th scope="col">¿Qué hace?</th>
+        </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>git status</td> <!-- celdad de las filas -->
+        <td>Muestra cambios pendientes</td>  
+    </tr>
+
+    <tr>
+      <td>git add</td>
+      <td>agrega cambios de</td>
+    </tr>
+
+        <tr>
+            <td>git push</td>
+            <td>sube al repo</td>
+        </tr>
 
 
+</tbody>
+
+
+    </table>
+</section>
+
+
+ </main>
 
 </body>
 </html>
