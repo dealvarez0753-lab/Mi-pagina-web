@@ -132,7 +132,7 @@
             <th scope="col">comando</th> <!-- celdas del encabezado -->
             <th scope="col">¿Qué hace?</th>
         </tr>
-</thead>
+</thead> <!-- encabezado de la tabla -->
 <tbody>
     <tr>
         <td>git status</td> <!-- celdad de las filas -->
@@ -148,16 +148,78 @@
             <td>git push</td>
             <td>sube al repo</td>
         </tr>
-
-
 </tbody>
-
-
-    </table>
+</table>
 </section>
 
+<section class="card" id="Formularios">
+    <h2>5) FORMULARIOS</h2>
+    <form action="#" method="post"></form> <!-- method enviar datos -->
+    <fieldset> 
+        <fieldset>Datos Basicos</fieldset>
+        <label>
+            Nombre
+            <input type="text" name="nombre" placeholder="Tu nombre" required> <!-- required campo requerido -->
+        </label>
 
- </main>
+         <label>
+            Email
+            <input type="email" name="email" placeholder="Tu correo" required> <!-- required campo requerido -->
+        </label>
 
+        <label>
+            Contraseña
+            <input type="password" minlength="6" placeholder="Tu contraseña"> 
+        </label>
+
+        <label>
+            Fecha
+            <input type="date" name="fecha" placeholder="fecha" required>
+        </label>
+
+         <label>
+            Color 
+            <input type="color" name="color">
+        </label>
+
+        <label>
+            Rango
+            <input type="range" name="rango" min="0" max="100">
+        </label>
+        
+        <label >
+           Archivo
+           <input type="file" name="archivo"> 
+        </label>
+        Seleccion
+        <select name="opcion">
+            <option value="">Elige una opción</option>
+            <option>HTML</option>
+            <option>css</option>
+            <option>gif</option>
+        </select>
+        
+        <label>
+            Comentatios
+            <textarea name="comentario" rows="4" placeholder="Escribe algo..."></textarea>
+        </label>
+
+        <div class="inline">
+            <label><input type="radio" name="nivel" value="basico"> Básico</label>
+            <label><input type="radio" name="nivel" value="pro"> Pro</label>
+       
+        </div class="inline">
+        <label><input type="checkbox" name="ok">Acepto Términos</label>
+        <div>
+
+            <div class="actions">
+                <button class="btn" type="submit"> Enviar</button>
+                <button class="btn ghost" type="reset"> Limpiar</button>
+            </div>
+    </fieldset>
+</section>
+
+ 
+</main>
 </body>
 </html>
